@@ -11,13 +11,28 @@
 export default {
   methods: {
     push () {
+      this.$router.push({
+        name: 'about'
+      })
     },
     getRute () {
-      console.log(this.$route)
+      console.log(this.$router)
     },
-    replace () {},
-    go () {},
-    addRoute () {}
+    replace () {
+      this.$router.replace({
+        name: 'about'
+      })
+    },
+    go () {
+      this.$router.go(-1)
+    },
+    addRoute () {
+      this.$router.addRoute({
+        path: '/newAbout',
+        name: 'newAbout',
+        component: () => import('./AboutView.vue')
+      })
+    }
   }
 }
 </script>

@@ -67,12 +67,32 @@ const routes = [
         ]
       }
     ]
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('../views/NotFound.vue')
+  },
+  {
+    path: '/newPage/:pathMatch(.*)*',
+    redirect: {
+      name: 'home'
+    }
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass: 'active',
+  scrollBehavior (to, from, savedPosition) {
+    console.log(to, from, savedPosition)
+    if (to.fullPath.match('newPage')) {
+      return {
+        top: 0
+      }
+    }
+    return {}
+  }
 })
 
 export default router
