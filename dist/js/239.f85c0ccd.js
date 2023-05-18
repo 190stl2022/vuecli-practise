@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunknew_project"]=self["webpackChunknew_project"]||[]).push([[239],{2239:function(n,e,r){r.r(e),r.d(e,{default:function(){return f}});var u=r(3396);const t=(0,u._)("h1",null,"404",-1),c=(0,u._)("p",null,"這頁面找不到囉～",-1);function l(n,e){return(0,u.wg)(),(0,u.iD)(u.HY,null,[t,c],64)}var o=r(89);const s={},a=(0,o.Z)(s,[["render",l]]);var f=a}}]);
+//# sourceMappingURL=239.f85c0ccd.js.map
