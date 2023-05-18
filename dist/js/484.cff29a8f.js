@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunknew_project"]=self["webpackChunknew_project"]||[]).push([[484],{2484:function(e,r,t){t.r(r),t.d(r,{default:function(){return u}});var n=t(3396);function o(e,r,t,o,s,c){return(0,n.wg)(),(0,n.iD)("div")}var s=t(4161),c={props:["id"],created(){console.log("props",this.id);const e=this.$route.params.id;s.Z.get(`https://randomuser.me/api/?seed=${e}`).then((e=>{console.log(e)}))}},i=t(89);const p=(0,i.Z)(c,[["render",o]]);var u=p}}]);
+//# sourceMappingURL=484.cff29a8f.js.map
